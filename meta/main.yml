@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: vyacheslav voronenko
-  description: helps you to install recent version of Git core software on your Ubuntu 16.04 LTS, 15.10, 15.04, 14.10, 14.04 LTS & 12.04 LTS systems using PPA.
+  description: most recent git using PPA.
   company: http://www.voronenko.info/
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value

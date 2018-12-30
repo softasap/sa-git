@@ -1,12 +1,18 @@
 ---
   - name: GIT | Install modern git ppa repo
     apt_repository: repo='ppa:git-core/ppa'
+    retries: 3
+    register: result
+    until: result is not failed
     become: yes
     tags:
       - git
 
   - name: GIT | Install package
-    apt: pkg="git" state="latest"
+    apt: pkg="git" state="present"
+    retries: 3
+    register: result
+    until: result is not failed
     become: yes
     tags:
       - git
